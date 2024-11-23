@@ -1,0 +1,4 @@
+#ignore thee]se files:
+build/
+install/
+.DS_Store

@@ -1,0 +1,136 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "Debug",
+            "displayName": "GCC 11.5.0 x86_64-apple-darwin22",
+            "description": "Using compilers: C = /usr/local/bin/gcc-11, CXX = /usr/local/bin/g++-11",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc-11",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-11",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Release",
+            "displayName": "GCC 11.5.0 x86_64-apple-darwin22",
+            "description": "Using compilers: C = /usr/local/bin/gcc-11, CXX = /usr/local/bin/g++-11",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc-11",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-11",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "G++-Debug",
+            "displayName": "GCC 14.2.0 x86_64-apple-darwin22",
+            "description": "Using compilers: C = /usr/local/bin/gcc-14, CXX = /usr/local/bin/g++-14",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc-14",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-14",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "G++-Release",
+            "displayName": "GCC 14.2.0 x86_64-apple-darwin22",
+            "description": "Using compilers: C = /usr/local/bin/gcc-14, CXX = /usr/local/bin/g++-14",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc-14",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-14",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "G++11-Debug",
+            "displayName": "GCC 11.5.0 x86_64-apple-darwin22",
+            "description": "Using compilers: C = /usr/local/bin/gcc-11, CXX = /usr/local/bin/g++-11",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc-11",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-11",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "G++11-Release",
+            "displayName": "GCC 11.5.0 x86_64-apple-darwin22",
+            "description": "Using compilers: C = /usr/local/bin/gcc-11, CXX = /usr/local/bin/g++-11",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/bin/gcc-11",
+                "CMAKE_CXX_COMPILER": "/usr/local/bin/g++-11",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "Clang-Debug",
+            "displayName": "Clang 18.1.8 x86_64-apple-darwin22.6.0",
+            "description": "Using compilers: C = /usr/local/opt/llvm@18/bin/clang, CXX = /usr/local/opt/llvm@18/bin/clang++",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/opt/llvm@18/bin/clang",
+                "CMAKE_CXX_COMPILER": "/usr/local/opt/llvm@18/bin/clang++",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Clang-Release",
+            "displayName": "Clang 18.1.8 x86_64-apple-darwin22.6.0",
+            "description": "Using compilers: C = /usr/local/opt/llvm@18/bin/clang, CXX = /usr/local/opt/llvm@18/bin/clang++",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/local/opt/llvm@18/bin/clang",
+                "CMAKE_CXX_COMPILER": "/usr/local/opt/llvm@18/bin/clang++",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "Clang-Debug",
+            "configurePreset": "Clang-Debug"
+        },
+        {
+            "name": "Clang-Release",
+            "configurePreset": "Clang-Release"
+        },
+        {
+            "name": "G++-Debug",
+            "configurePreset": "G++-Debug"
+        },
+        {
+            "name": "G++-Release",
+            "configurePreset": "G++-Release"
+        },
+        {
+            "name": "G++11-Debug",
+            "configurePreset": "G++11-Debug"
+        },
+        {
+            "name": "G++11-Release",
+            "configurePreset": "G++11-Release"
+        },
+        {
+            "name": "Debug",
+            "configurePreset": "Debug"
+        },
+        {
+            "name": "Release",
+            "configurePreset": "Release"
+        }
+    ]
+
+}
